@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Core">
+      <UniqueIdentifier>{49d958e6-4ba0-4695-b207-e543a21e96af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Project">
+      <UniqueIdentifier>{82df305d-8d19-4418-a493-8dbd640e5860}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Project\Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Project\Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Project\Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Project\Resource Files\Config">
+      <UniqueIdentifier>{e81d842e-4d5b-4365-9fb9-fe9f98a827f1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Project\Resource Files\Textures">
+      <UniqueIdentifier>{d0758535-1db9-438c-b5f0-862d04fdfe1c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Project\Resource Files\Fonts">
+      <UniqueIdentifier>{fdc7b80e-de11-4fa1-9afb-484530d15003}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Project\Resource Files\Sounds">
+      <UniqueIdentifier>{11d4e81f-22a2-413e-86af-4ae612113b3b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Project\Resource Files\Images">
+      <UniqueIdentifier>{23b68d54-5a58-4a56-9b95-c18d55f077fe}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayState.cpp">
+      <Filter>Project\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Node.cpp">
+      <Filter>Project\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NodeMap.cpp">
+      <Filter>Project\Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CopyFileToFolders Include="assets\config\window.cfg">
+      <Filter>Project\Resource Files\Config</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="assets\config\app.cfg">
+      <Filter>Project\Resource Files\Config</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="assets\config\debug.cfg">
+      <Filter>Project\Resource Files\Config</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="assets\textures\test.png">
+      <Filter>Project\Resource Files\Textures</Filter>
+    </CopyFileToFolders>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="PlayState.h">
+      <Filter>Project\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Node.h">
+      <Filter>Project\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NodeMap.h">
+      <Filter>Project\Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

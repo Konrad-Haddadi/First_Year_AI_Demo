@@ -1,0 +1,290 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Agent.cpp">
+      <Filter>Source\Agents</Filter>
+    </ClCompile>
+    <ClCompile Include="CovenantBaseAgent.cpp">
+      <Filter>Source\Agents</Filter>
+    </ClCompile>
+    <ClCompile Include="DistanceCondition.cpp">
+      <Filter>Source\BehaviourTrees\Condition</Filter>
+    </ClCompile>
+    <ClCompile Include="GroupCondition.cpp">
+      <Filter>Source\BehaviourTrees\Condition</Filter>
+    </ClCompile>
+    <ClCompile Include="HuntCondition.cpp">
+      <Filter>Source\BehaviourTrees\Condition</Filter>
+    </ClCompile>
+    <ClCompile Include="SpartanDistanceCondition.cpp">
+      <Filter>Source\BehaviourTrees\Condition</Filter>
+    </ClCompile>
+    <ClCompile Include="SquadAmountCondition.cpp">
+      <Filter>Source\BehaviourTrees\Condition</Filter>
+    </ClCompile>
+    <ClCompile Include="FleeBehaviour.cpp">
+      <Filter>Source\Behaviours</Filter>
+    </ClCompile>
+    <ClCompile Include="FollowBehavoiur.cpp">
+      <Filter>Source\Behaviours</Filter>
+    </ClCompile>
+    <ClCompile Include="FollowSpartanBehaviour.cpp">
+      <Filter>Source\Behaviours</Filter>
+    </ClCompile>
+    <ClCompile Include="GotoPointBehaviour.cpp">
+      <Filter>Source\Behaviours</Filter>
+    </ClCompile>
+    <ClCompile Include="WanderBehaviour.cpp">
+      <Filter>Source\Behaviours</Filter>
+    </ClCompile>
+    <ClCompile Include="GameState.cpp">
+      <Filter>Source\GameStates</Filter>
+    </ClCompile>
+    <ClCompile Include="GroupTransition.cpp">
+      <Filter>Source\BehaviourTrees\Transition</Filter>
+    </ClCompile>
+    <ClCompile Include="HuntTransition.cpp">
+      <Filter>Source\BehaviourTrees\Transition</Filter>
+    </ClCompile>
+    <ClCompile Include="PassiveTransition.cpp">
+      <Filter>Source\BehaviourTrees\Transition</Filter>
+    </ClCompile>
+    <ClCompile Include="SearchTransition.cpp">
+      <Filter>Source\BehaviourTrees\Transition</Filter>
+    </ClCompile>
+    <ClCompile Include="Transition.cpp">
+      <Filter>Source\BehaviourTrees\Transition</Filter>
+    </ClCompile>
+    <ClCompile Include="GroupTree.cpp">
+      <Filter>Source\BehaviourTrees\Tree</Filter>
+    </ClCompile>
+    <ClCompile Include="HuntTree.cpp">
+      <Filter>Source\BehaviourTrees\Tree</Filter>
+    </ClCompile>
+    <ClCompile Include="PassiveTree.cpp">
+      <Filter>Source\BehaviourTrees\Tree</Filter>
+    </ClCompile>
+    <ClCompile Include="SearchTree.cpp">
+      <Filter>Source\BehaviourTrees\Tree</Filter>
+    </ClCompile>
+    <ClCompile Include="HashTable.cpp">
+      <Filter>Source\Nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="Map.cpp">
+      <Filter>Source\Nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="Node.cpp">
+      <Filter>Source\Nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="NodeMap.cpp">
+      <Filter>Source\Nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="NotDecorator.cpp">
+      <Filter>Source\BehaviourTrees\Decorator</Filter>
+    </ClCompile>
+    <ClCompile Include="PathAgent.cpp">
+      <Filter>Source\Agents</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayState.cpp">
+      <Filter>Source\GameStates</Filter>
+    </ClCompile>
+    <ClCompile Include="Sequence.cpp">
+      <Filter>Source\BehaviourTrees</Filter>
+    </ClCompile>
+    <ClCompile Include="Selector.cpp">
+      <Filter>Source\BehaviourTrees</Filter>
+    </ClCompile>
+    <ClCompile Include="SpartanAgent.cpp">
+      <Filter>Source\Agents</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Agent.h">
+      <Filter>Header\Agents</Filter>
+    </ClInclude>
+    <ClInclude Include="Behaviour.h">
+      <Filter>Header\Behaviours</Filter>
+    </ClInclude>
+    <ClInclude Include="CovenantBaseAgent.h">
+      <Filter>Header\Behaviours</Filter>
+    </ClInclude>
+    <ClInclude Include="FleeBehaviour.h">
+      <Filter>Header\Behaviours</Filter>
+    </ClInclude>
+    <ClInclude Include="FollowBehavoiur.h">
+      <Filter>Header\Behaviours</Filter>
+    </ClInclude>
+    <ClInclude Include="FollowSpartanBehaviour.h">
+      <Filter>Header\Behaviours</Filter>
+    </ClInclude>
+    <ClInclude Include="GameState.h">
+      <Filter>Header\GameStates</Filter>
+    </ClInclude>
+    <ClInclude Include="GotoPointBehaviour.h">
+      <Filter>Header\Behaviours</Filter>
+    </ClInclude>
+    <ClInclude Include="HashTable.h">
+      <Filter>Header\Nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="LinkedList.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Map.h">
+      <Filter>Header\Nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="Node.h">
+      <Filter>Header\Nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="NodeMap.h">
+      <Filter>Header\Nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="PathAgent.h">
+      <Filter>Header\Agents</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayState.h">
+      <Filter>Header\GameStates</Filter>
+    </ClInclude>
+    <ClInclude Include="Selector.h">
+      <Filter>Header\BehaviourTrees</Filter>
+    </ClInclude>
+    <ClInclude Include="Sequence.h">
+      <Filter>Header\BehaviourTrees</Filter>
+    </ClInclude>
+    <ClInclude Include="SpartanAgent.h">
+      <Filter>Header\Agents</Filter>
+    </ClInclude>
+    <ClInclude Include="WanderBehaviour.h">
+      <Filter>Header\Behaviours</Filter>
+    </ClInclude>
+    <ClInclude Include="GroupTree.h">
+      <Filter>Header\BehaviourTrees\Tree</Filter>
+    </ClInclude>
+    <ClInclude Include="HuntTree.h">
+      <Filter>Header\BehaviourTrees\Tree</Filter>
+    </ClInclude>
+    <ClInclude Include="PassiveTree.h">
+      <Filter>Header\BehaviourTrees\Tree</Filter>
+    </ClInclude>
+    <ClInclude Include="SearchTree.h">
+      <Filter>Header\BehaviourTrees\Tree</Filter>
+    </ClInclude>
+    <ClInclude Include="DistanceCondition.h">
+      <Filter>Header\BehaviourTrees\Condition</Filter>
+    </ClInclude>
+    <ClInclude Include="GroupCondition.h">
+      <Filter>Header\BehaviourTrees\Condition</Filter>
+    </ClInclude>
+    <ClInclude Include="HuntCondition.h">
+      <Filter>Header\BehaviourTrees\Condition</Filter>
+    </ClInclude>
+    <ClInclude Include="SquadAmountCondition.h">
+      <Filter>Header\BehaviourTrees\Condition</Filter>
+    </ClInclude>
+    <ClInclude Include="SpartanDistanceCondition.h">
+      <Filter>Header\BehaviourTrees\Condition</Filter>
+    </ClInclude>
+    <ClInclude Include="BehaviourTree.h">
+      <Filter>Header\BehaviourTrees\Tree</Filter>
+    </ClInclude>
+    <ClInclude Include="GroupTransition.h">
+      <Filter>Header\BehaviourTrees\Transition</Filter>
+    </ClInclude>
+    <ClInclude Include="HuntTransition.h">
+      <Filter>Header\BehaviourTrees\Transition</Filter>
+    </ClInclude>
+    <ClInclude Include="PassiveTransition.h">
+      <Filter>Header\BehaviourTrees\Transition</Filter>
+    </ClInclude>
+    <ClInclude Include="SearchTransition.h">
+      <Filter>Header\BehaviourTrees\Transition</Filter>
+    </ClInclude>
+    <ClInclude Include="Transition.h">
+      <Filter>Header\BehaviourTrees\Transition</Filter>
+    </ClInclude>
+    <ClInclude Include="Composite.h">
+      <Filter>Header\Behaviours</Filter>
+    </ClInclude>
+    <ClInclude Include="Condition.h">
+      <Filter>Header\BehaviourTrees\Condition</Filter>
+    </ClInclude>
+    <ClInclude Include="Decorator.h">
+      <Filter>Header\BehaviourTrees\Decorator</Filter>
+    </ClInclude>
+    <ClInclude Include="NotDecorator.h">
+      <Filter>Header\BehaviourTrees\Decorator</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header">
+      <UniqueIdentifier>{76488b1a-9d43-44e3-b678-4b6ccc0e12e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source">
+      <UniqueIdentifier>{0a53db8b-e6c7-46bc-8db6-664a439f4c0b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources">
+      <UniqueIdentifier>{41010be2-cca0-4e19-a64b-b57b9a6055d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header\Behaviours">
+      <UniqueIdentifier>{e0ce4262-e502-4bf3-a875-9ce26822cfe6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header\BehaviourTrees">
+      <UniqueIdentifier>{0f55a955-ec07-4d5d-b2ed-f972e1d2797e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header\GameStates">
+      <UniqueIdentifier>{5e26a3e1-bdea-4e8a-8273-407e684808f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header\Nodes">
+      <UniqueIdentifier>{6cd96ee0-84e9-45d2-ab97-bec9c3e5c6e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header\Agents">
+      <UniqueIdentifier>{9d9c5c08-31f0-4658-9c2e-ddeb4c065375}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header\BehaviourTrees\Condition">
+      <UniqueIdentifier>{2adb622f-a5e3-458c-b8bd-e2016085df6c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header\BehaviourTrees\Transition">
+      <UniqueIdentifier>{d272a7eb-482b-4bff-8058-dea398a4067f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header\BehaviourTrees\Tree">
+      <UniqueIdentifier>{21854c11-8c5d-4a40-bf0b-e995fb062ec7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header\BehaviourTrees\Decorator">
+      <UniqueIdentifier>{8ca02430-a943-471e-a991-858beb045736}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Behaviours">
+      <UniqueIdentifier>{ad42cd36-5bac-4c6e-81d9-c07e7019bc59}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\BehaviourTrees">
+      <UniqueIdentifier>{5c7130f7-20da-4711-8d70-89c38e7806c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\GameStates">
+      <UniqueIdentifier>{f395aace-6bd3-4244-abef-523858636c39}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Agents">
+      <UniqueIdentifier>{c0b8c21b-dfaf-4895-ad7c-b5873fb0021a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Nodes">
+      <UniqueIdentifier>{7c3ea527-1836-4ee5-87cb-0ad84b83eeac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\BehaviourTrees\Condition">
+      <UniqueIdentifier>{a2d6137b-034f-493c-b424-9f616a432b85}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\BehaviourTrees\Decorator">
+      <UniqueIdentifier>{ad369e68-81a7-414a-914a-6b5b3b872dee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\BehaviourTrees\Transition">
+      <UniqueIdentifier>{b607c9e4-13c7-4d50-873f-e6764a118c48}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\BehaviourTrees\Tree">
+      <UniqueIdentifier>{6a0fca6a-7a53-4edd-a3bc-3d19eea475fc}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <CopyFileToFolders Include="Assets\Benlin.png">
+      <Filter>Resources</Filter>
+    </CopyFileToFolders>
+  </ItemGroup>
+</Project>

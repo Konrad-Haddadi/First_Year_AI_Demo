@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{4637c26a-c4b0-466b-a51e-e8a26997b069}</ProjectGuid>
+    <RootNamespace>AddngWeapons</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)Builds\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)Intermediate\$(ProjectName)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)Builds\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)Intermediate\$(ProjectName)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)Builds\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)Intermediate\$(ProjectName)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)Builds\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)Intermediate\$(ProjectName)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>$(SolutionDir)Dependencies\include\;</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)Dependencies\lib\raylib\;$(SolutionDir)Dependencies\lib\Azimuth\;</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Azimuth.lib;raylibdll.lib;winmm.lib;kernel32.lib;opengl32.lib;gdi32.lib;$(CoreLibraryDependencies);%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy /Y "$(SolutionDir)Dependencies\lib\raylib\raylib.dll" "$(SolutionDir)Builds\$(Configuration)\raylib.dll"
+copy /Y "$(SolutionDir)Dependencies\lib\Azimuth\Azimuth.dll" "$(SolutionDir)Builds\$(Configuration)\Azimuth.dll"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>$(SolutionDir)Dependencies\include\;</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)Dependencies\lib\raylib\;$(SolutionDir)Dependencies\lib\Azimuth\;</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Azimuth.lib;raylibdll.lib;winmm.lib;kernel32.lib;opengl32.lib;gdi32.lib;$(CoreLibraryDependencies);%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy /Y "$(SolutionDir)Dependencies\lib\raylib\raylib.dll" "$(SolutionDir)Builds\$(Configuration)\raylib.dll"
+copy /Y "$(SolutionDir)Dependencies\lib\Azimuth\Azimuth.dll" "$(SolutionDir)Builds\$(Configuration)\Azimuth.dll"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>$(SolutionDir)Dependencies\include\;</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)Dependencies\lib\raylib\;$(SolutionDir)Dependencies\lib\Azimuth\;</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Azimuth_d.lib;raylibdll.lib;winmm.lib;kernel32.lib;opengl32.lib;gdi32.lib;$(CoreLibraryDependencies);%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy /Y "$(SolutionDir)Dependencies\lib\raylib\raylib.dll" "$(SolutionDir)Builds\$(Configuration)\raylib.dll"
+copy /Y "$(SolutionDir)Dependencies\lib\Azimuth\Azimuth_d.dll" "$(SolutionDir)Builds\$(Configuration)\Azimuth_d.dll"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>$(SolutionDir)Dependencies\include\;</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)Dependencies\lib\raylib\;$(SolutionDir)Dependencies\lib\Azimuth\;</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Azimuth.lib;raylibdll.lib;winmm.lib;kernel32.lib;opengl32.lib;gdi32.lib;$(CoreLibraryDependencies);%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy /Y "$(SolutionDir)Dependencies\lib\raylib\raylib.dll" "$(SolutionDir)Builds\$(Configuration)\raylib.dll"
+copy /Y "$(SolutionDir)Dependencies\lib\Azimuth\Azimuth.dll" "$(SolutionDir)Builds\$(Configuration)\Azimuth.dll"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Agents\Source\Agent.cpp" />
+    <ClCompile Include="Agents\Source\CovenantAgent.cpp" />
+    <ClCompile Include="Agents\Source\PathAgent.cpp" />
+    <ClCompile Include="Agents\Source\Spartan.cpp" />
+    <ClCompile Include="Agents\Source\SteeringAgent.cpp" />
+    <ClCompile Include="Agents\Weapons\Source\WeaponBase.cpp" />
+    <ClCompile Include="Behaviour\BehaviourTree\Composite\Source\NotDecorator.cpp" />
+    <ClCompile Include="Behaviour\BehaviourTree\Composite\Source\Selector.cpp" />
+    <ClCompile Include="Behaviour\BehaviourTree\Composite\Source\Sequence.cpp" />
+    <ClCompile Include="Behaviour\BehaviourTree\Conditions\Source\DistanceCondition.cpp" />
+    <ClCompile Include="Behaviour\BehaviourTree\Conditions\Source\GroupCondition.cpp" />
+    <ClCompile Include="Behaviour\BehaviourTree\Conditions\Source\HuntCondition.cpp" />
+    <ClCompile Include="Behaviour\BehaviourTree\Conditions\Source\SeeSpartanCondition.cpp" />
+    <ClCompile Include="Behaviour\BehaviourTree\Conditions\Source\SpartanDistanceCondition.cpp" />
+    <ClCompile Include="Behaviour\BehaviourTree\Conditions\Source\SquadAmountCondition.cpp" />
+    <ClCompile Include="Behaviour\BehaviourTree\Transition\Source\GroupTransition.cpp" />
+    <ClCompile Include="Behaviour\BehaviourTree\Transition\Source\HuntTransition.cpp" />
+    <ClCompile Include="Behaviour\BehaviourTree\Transition\Source\PassiveTransition.cpp" />
+    <ClCompile Include="Behaviour\BehaviourTree\Transition\Source\SearchTransition.cpp" />
+    <ClCompile Include="Behaviour\BehaviourTree\Transition\Source\Transition.cpp" />
+    <ClCompile Include="Behaviour\BehaviourTree\Tree\Source\GroupTree.cpp" />
+    <ClCompile Include="Behaviour\BehaviourTree\Tree\Source\HuntTree.cpp" />
+    <ClCompile Include="Behaviour\BehaviourTree\Tree\Source\PassiveTree.cpp" />
+    <ClCompile Include="Behaviour\BehaviourTree\Tree\Source\SearchTree.cpp" />
+    <ClCompile Include="Behaviour\Source\AvoidingBehaviour.cpp" />
+    <ClCompile Include="Behaviour\Source\FleeBehaviour.cpp" />
+    <ClCompile Include="Behaviour\Source\FollowBehavoiur.cpp" />
+    <ClCompile Include="Behaviour\Source\FollowSpartanBehaviour.cpp" />
+    <ClCompile Include="Behaviour\Source\GotoPointBehaviour.cpp" />
+    <ClCompile Include="Behaviour\Source\WanderBehaviour.cpp" />
+    <ClCompile Include="Core\GameStates\Source\GameState.cpp" />
+    <ClCompile Include="Core\GameStates\Source\PlayState.cpp" />
+    <ClCompile Include="Core\Nodes\Source\HashTable.cpp" />
+    <ClCompile Include="Core\Nodes\Source\NavMesh.cpp" />
+    <ClCompile Include="Core\Nodes\Source\NavMeshNode.cpp" />
+    <ClCompile Include="Core\poly2tri\common\shapes.cc" />
+    <ClCompile Include="Core\poly2tri\sweep\advancing_front.cc" />
+    <ClCompile Include="Core\poly2tri\sweep\cdt.cc" />
+    <ClCompile Include="Core\poly2tri\sweep\sweep.cc" />
+    <ClCompile Include="Core\poly2tri\sweep\sweep_context.cc" />
+    <ClCompile Include="FSM\Source\FiniteStateMachine.cpp" />
+    <ClCompile Include="FSM\Source\FSMDistanceCondition.cpp" />
+    <ClCompile Include="FSM\Source\FSMSurroundingCondition.cpp" />
+    <ClCompile Include="FSM\Source\SelectAgent.cpp" />
+    <ClCompile Include="FSM\Source\State.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Agents\Agent.h" />
+    <ClInclude Include="Agents\CovenantAgent.h" />
+    <ClInclude Include="Agents\PathAgent.h" />
+    <ClInclude Include="Agents\Spartan.h" />
+    <ClInclude Include="Agents\SteeringAgent.h" />
+    <ClInclude Include="Agents\Weapons\WeaponBase.h" />
+    <ClInclude Include="Behaviour\AvoidingBehaviour.h" />
+    <ClInclude Include="Behaviour\Behaviour.h" />
+    <ClInclude Include="Behaviour\BehaviourTree\Composite\Composite.h" />
+    <ClInclude Include="Behaviour\BehaviourTree\Composite\Decorator.h" />
+    <ClInclude Include="Behaviour\BehaviourTree\Composite\NotDecorator.h" />
+    <ClInclude Include="Behaviour\BehaviourTree\Composite\Selector.h" />
+    <ClInclude Include="Behaviour\BehaviourTree\Composite\Sequence.h" />
+    <ClInclude Include="Behaviour\BehaviourTree\Conditions\DistanceCondition.h" />
+    <ClInclude Include="Behaviour\BehaviourTree\Conditions\GroupCondition.h" />
+    <ClInclude Include="Behaviour\BehaviourTree\Conditions\HuntCondition.h" />
+    <ClInclude Include="Behaviour\BehaviourTree\Conditions\SeeSpartanCondition.h" />
+    <ClInclude Include="Behaviour\BehaviourTree\Conditions\SpartanDistanceCondition.h" />
+    <ClInclude Include="Behaviour\BehaviourTree\Conditions\SquadAmountCondition.h" />
+    <ClInclude Include="Behaviour\BehaviourTree\Transition\GroupTransition.h" />
+    <ClInclude Include="Behaviour\BehaviourTree\Transition\HuntTransition.h" />
+    <ClInclude Include="Behaviour\BehaviourTree\Transition\PassiveTransition.h" />
+    <ClInclude Include="Behaviour\BehaviourTree\Transition\SearchTransition.h" />
+    <ClInclude Include="Behaviour\BehaviourTree\Transition\Transition.h" />
+    <ClInclude Include="Behaviour\BehaviourTree\Tree\BehaviourTree.h" />
+    <ClInclude Include="Behaviour\BehaviourTree\Tree\GroupTree.h" />
+    <ClInclude Include="Behaviour\BehaviourTree\Tree\HuntTree.h" />
+    <ClInclude Include="Behaviour\BehaviourTree\Tree\PassiveTree.h" />
+    <ClInclude Include="Behaviour\BehaviourTree\Tree\SearchTree.h" />
+    <ClInclude Include="Behaviour\FleeBehaviour.h" />
+    <ClInclude Include="Behaviour\FollowBehavoiur.h" />
+    <ClInclude Include="Behaviour\FollowSpartanBehaviour.h" />
+    <ClInclude Include="Behaviour\GotoPointBehaviour.h" />
+    <ClInclude Include="Behaviour\SteeringBehaviour.h" />
+    <ClInclude Include="Behaviour\WanderBehaviour.h" />
+    <ClInclude Include="Core\GameStates\GameState.h" />
+    <ClInclude Include="Core\GameStates\PlayState.h" />
+    <ClInclude Include="Core\Nodes\HashTable.h" />
+    <ClInclude Include="Core\Nodes\INavigatable.h" />
+    <ClInclude Include="Core\Nodes\NavMesh.h" />
+    <ClInclude Include="Core\Nodes\NavMeshNode.h" />
+    <ClInclude Include="Core\poly2tri\common\shapes.h" />
+    <ClInclude Include="Core\poly2tri\common\utils.h" />
+    <ClInclude Include="Core\poly2tri\poly2tri.h" />
+    <ClInclude Include="Core\poly2tri\sweep\advancing_front.h" />
+    <ClInclude Include="Core\poly2tri\sweep\cdt.h" />
+    <ClInclude Include="Core\poly2tri\sweep\sweep.h" />
+    <ClInclude Include="Core\poly2tri\sweep\sweep_context.h" />
+    <ClInclude Include="FSM\Condition.h" />
+    <ClInclude Include="FSM\FiniteStateMachine.h" />
+    <ClInclude Include="FSM\FSMDistanceCondition.h" />
+    <ClInclude Include="FSM\FSMSurroundingCondition.h" />
+    <ClInclude Include="FSM\SelectAgent.h" />
+    <ClInclude Include="FSM\State.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CopyFileToFolders Include="Assets\Benlin.png">
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)Assets\textures\</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)Assets\textures\</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)Assets\textures\</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)Assets\textures\</DestinationFolders>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="Assets\SpriteSheetSample.png">
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)Assets\textures</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)Assets\textures</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)Assets\textures\</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)Assets\textures\</DestinationFolders>
+    </CopyFileToFolders>
+  </ItemGroup>
+  <ItemGroup>
+    <CopyFileToFolders Include="Assets\Rock.png">
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)Assets\textures\</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)Assets\textures\</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)Assets\textures\</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)Assets\textures\</DestinationFolders>
+    </CopyFileToFolders>
+  </ItemGroup>
+  <ItemGroup>
+    <CopyFileToFolders Include="Assets\Elite.png">
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)Assets\textures\</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)Assets\textures\</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)Assets\textures\</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)Assets\textures\</DestinationFolders>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="Assets\EliteC.png">
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)Assets\textures\</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)Assets\textures\</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)Assets\textures\</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)Assets\textures\</DestinationFolders>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="Assets\Grunt.png">
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)Assets\textures\</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)Assets\textures\</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)Assets\textures\</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)Assets\textures\</DestinationFolders>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="Assets\GruntC.png">
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(OutDir)Assets\textures\</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(OutDir)Assets\textures\</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)Assets\textures\</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)Assets\textures\</DestinationFolders>
+    </CopyFileToFolders>
+  </ItemGroup>
+  <ItemGroup>
+    <CopyFileToFolders Include="Assets\Player.png">
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)Assets\textures\</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)Assets\textures\</DestinationFolders>
+    </CopyFileToFolders>
+  </ItemGroup>
+  <ItemGroup>
+    <CopyFileToFolders Include="Assets\GuiltySpark.png">
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(OutDir)Assets\textures\</DestinationFolders>
+      <DestinationFolders Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)Assets\textures\</DestinationFolders>
+    </CopyFileToFolders>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

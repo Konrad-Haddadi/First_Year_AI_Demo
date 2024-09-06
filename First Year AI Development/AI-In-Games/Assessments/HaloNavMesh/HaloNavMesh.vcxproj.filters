@@ -1,0 +1,467 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Game States">
+      <UniqueIdentifier>{bd14ce01-9049-4080-9cb0-15808e75d6c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game States">
+      <UniqueIdentifier>{59b3d847-58ab-4403-8564-759de20aaca9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Types">
+      <UniqueIdentifier>{4bb6397e-99ef-4290-a7a5-966d0b1ab9ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Types">
+      <UniqueIdentifier>{bcb307ed-d490-4af5-9601-5820f5694775}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Nodes">
+      <UniqueIdentifier>{3772e400-8b00-4199-8e0a-270461c0f983}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Nodes">
+      <UniqueIdentifier>{65ba9587-9b0d-4e8f-9976-c8b7e7b9cb39}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Core">
+      <UniqueIdentifier>{cf47f85e-beba-48e1-a9a7-b3fdd53dab8f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Core">
+      <UniqueIdentifier>{25e22116-c91e-419b-b564-7622a3070b35}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Agent">
+      <UniqueIdentifier>{191fd0f9-aba1-40a0-9e8d-1ef26349b30b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Agent">
+      <UniqueIdentifier>{52231c81-922a-4373-8c04-d68f5c4bbc76}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Agent\State">
+      <UniqueIdentifier>{1f2056df-6b4f-4986-a735-2348275c4673}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Agent\State\Condition">
+      <UniqueIdentifier>{a325b6b8-6915-4190-893d-8c6abbd47221}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PolyTri">
+      <UniqueIdentifier>{5b0a4ae7-f15b-476c-914d-e22935f1562e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PolyTri\common">
+      <UniqueIdentifier>{f89277bd-c42d-4450-878e-fb87aef82d92}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PolyTri\sweep">
+      <UniqueIdentifier>{ebaa6822-397d-4abd-85d2-e02b63304395}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BehaviourTree">
+      <UniqueIdentifier>{0ce55952-17d3-4617-afc4-76144c624e64}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BehaviourTree\TreeNodes">
+      <UniqueIdentifier>{36ff98da-dd21-43d4-9e8f-7bad03004e6b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BehaviourTree\Condition">
+      <UniqueIdentifier>{9800a6cd-74dc-416f-8639-b16f71705bbc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BehaviourTree\Transition">
+      <UniqueIdentifier>{0250e195-3016-4184-9c08-984f89030031}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BehaviourTree\Tree">
+      <UniqueIdentifier>{dc85f99b-2a8f-4694-982d-6c9d829e92ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Behaviour">
+      <UniqueIdentifier>{e6eaa9a5-8752-44dd-9834-d4525d2b1dac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BehaviourTree\Tree\Header">
+      <UniqueIdentifier>{734c5993-2239-4be5-ba22-e9626b135482}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BehaviourTree\Tree\Source">
+      <UniqueIdentifier>{4968481d-10fb-4c61-8b31-0fd2645b484d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BehaviourTree\Condition\Header">
+      <UniqueIdentifier>{716b7fcb-6720-453c-a1df-45b504b3b88f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BehaviourTree\Transition\Header">
+      <UniqueIdentifier>{ab2c1a18-a309-41bf-8d1f-816c31ffe519}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BehaviourTree\Condition\Source">
+      <UniqueIdentifier>{f6eccaab-cf09-4df1-8dbb-59ce4a6be322}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BehaviourTree\Transition\Source">
+      <UniqueIdentifier>{01766bc2-9b17-4669-8dee-a5df6eb65723}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BehaviourTree\Decorator">
+      <UniqueIdentifier>{6f1ec17d-48b4-4e8a-b834-2043a6b00955}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BehaviourTree\Decorator\Header">
+      <UniqueIdentifier>{4e438857-ebf9-4338-88e9-92a8aa6e3225}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BehaviourTree\Decorator\Source">
+      <UniqueIdentifier>{2d97f16c-cfb1-416c-b194-c9450d4e222a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Behaviour">
+      <UniqueIdentifier>{99e54591-c19c-4f2f-bd61-b1c883fd447b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Behaviour\AgentBehaviour">
+      <UniqueIdentifier>{fa7988fb-3086-4e79-9ecb-6181d043fa1b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Behaviour\SteeringBehaviour">
+      <UniqueIdentifier>{1c27e053-5c46-40c8-95c9-cd9bdaffcea5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Behaviour\AgentBehaviour">
+      <UniqueIdentifier>{03643839-938b-4a02-90ad-45f046b65ac1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Behaviour\SteeringBehaviour">
+      <UniqueIdentifier>{6b2bf7e1-696c-4a41-901f-c3cbc934b709}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="FSM">
+      <UniqueIdentifier>{fd319add-5b1d-40e8-914a-8bf4439a7f44}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="FSM\Header">
+      <UniqueIdentifier>{38f37b89-1f53-41fd-82b8-172fbbd6e538}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="FSM\Source">
+      <UniqueIdentifier>{c5d4857d-e732-4d96-a329-8bd1f2379f15}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Resource Files\Assets">
+      <UniqueIdentifier>{89a9e141-b1dd-43af-8d89-bb926b875e7c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="PlayState.cpp">
+      <Filter>Source Files\Game States</Filter>
+    </ClCompile>
+    <ClCompile Include="GameState.cpp">
+      <Filter>Source Files\Game States</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Agent.cpp">
+      <Filter>Source Files\Agent</Filter>
+    </ClCompile>
+    <ClCompile Include="PathAgent.cpp">
+      <Filter>Source Files\Agent</Filter>
+    </ClCompile>
+    <ClCompile Include="poly2tri\common\shapes.cc">
+      <Filter>PolyTri\common</Filter>
+    </ClCompile>
+    <ClCompile Include="poly2tri\sweep\advancing_front.cc">
+      <Filter>PolyTri\sweep</Filter>
+    </ClCompile>
+    <ClCompile Include="poly2tri\sweep\cdt.cc">
+      <Filter>PolyTri\sweep</Filter>
+    </ClCompile>
+    <ClCompile Include="poly2tri\sweep\sweep.cc">
+      <Filter>PolyTri\sweep</Filter>
+    </ClCompile>
+    <ClCompile Include="poly2tri\sweep\sweep_context.cc">
+      <Filter>PolyTri\sweep</Filter>
+    </ClCompile>
+    <ClCompile Include="NavMeshNode.cpp">
+      <Filter>Source Files\Nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="NavMesh.cpp">
+      <Filter>Source Files\Nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="Line.cpp">
+      <Filter>Source Files\Nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="CovenantAgent.cpp">
+      <Filter>Source Files\Agent</Filter>
+    </ClCompile>
+    <ClCompile Include="Spartan.cpp">
+      <Filter>Source Files\Agent</Filter>
+    </ClCompile>
+    <ClCompile Include="GroupTransition.cpp">
+      <Filter>BehaviourTree\Transition\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="HuntTransition.cpp">
+      <Filter>BehaviourTree\Transition\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="PassiveTransition.cpp">
+      <Filter>BehaviourTree\Transition\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="SearchTransition.cpp">
+      <Filter>BehaviourTree\Transition\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Transition.cpp">
+      <Filter>BehaviourTree\Transition\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="GroupCondition.cpp">
+      <Filter>BehaviourTree\Condition\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="HuntCondition.cpp">
+      <Filter>BehaviourTree\Condition\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="SpartanDistanceCondition.cpp">
+      <Filter>BehaviourTree\Condition\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="SquadAmountCondition.cpp">
+      <Filter>BehaviourTree\Condition\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="GroupTree.cpp">
+      <Filter>BehaviourTree\Tree\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="HuntTree.cpp">
+      <Filter>BehaviourTree\Tree\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="PassiveTree.cpp">
+      <Filter>BehaviourTree\Tree\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="SearchTree.cpp">
+      <Filter>BehaviourTree\Tree\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Selector.cpp">
+      <Filter>BehaviourTree\Tree\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Sequence.cpp">
+      <Filter>BehaviourTree\Tree\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="NotDecorator.cpp">
+      <Filter>BehaviourTree\Decorator\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="HashTable.cpp">
+      <Filter>BehaviourTree\TreeNodes</Filter>
+    </ClCompile>
+    <ClCompile Include="DistanceCondition.cpp">
+      <Filter>BehaviourTree\Condition\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="SteeringAgent.cpp">
+      <Filter>Source Files\Agent</Filter>
+    </ClCompile>
+    <ClCompile Include="SeeSpartanCondition.cpp">
+      <Filter>BehaviourTree\Condition\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="FleeBehaviour.cpp">
+      <Filter>Source Files\Behaviour\AgentBehaviour</Filter>
+    </ClCompile>
+    <ClCompile Include="GotoPointBehaviour.cpp">
+      <Filter>Source Files\Behaviour\AgentBehaviour</Filter>
+    </ClCompile>
+    <ClCompile Include="FollowBehavoiur.cpp">
+      <Filter>Source Files\Behaviour\AgentBehaviour</Filter>
+    </ClCompile>
+    <ClCompile Include="FollowSpartanBehaviour.cpp">
+      <Filter>Source Files\Behaviour\AgentBehaviour</Filter>
+    </ClCompile>
+    <ClCompile Include="WanderBehaviour.cpp">
+      <Filter>Source Files\Behaviour\AgentBehaviour</Filter>
+    </ClCompile>
+    <ClCompile Include="AvoidingBehaviour.cpp">
+      <Filter>Source Files\Behaviour\SteeringBehaviour</Filter>
+    </ClCompile>
+    <ClCompile Include="FSM\FSMDistanceCondition.cpp">
+      <Filter>FSM\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="FSM\FiniteStateMachine.cpp">
+      <Filter>FSM\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="FSM\SelectAgent.cpp">
+      <Filter>FSM\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="FSM\State.cpp">
+      <Filter>FSM\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="FSM\FSMSurroundingCondition.cpp">
+      <Filter>FSM\Source</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="PlayState.h">
+      <Filter>Header Files\Game States</Filter>
+    </ClInclude>
+    <ClInclude Include="GameState.h">
+      <Filter>Header Files\Game States</Filter>
+    </ClInclude>
+    <ClInclude Include="LinkedList.h">
+      <Filter>Header Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Agent.h">
+      <Filter>Header Files\Agent</Filter>
+    </ClInclude>
+    <ClInclude Include="PathAgent.h">
+      <Filter>Header Files\Agent</Filter>
+    </ClInclude>
+    <ClInclude Include="Condition.h">
+      <Filter>Header Files\Agent\State\Condition</Filter>
+    </ClInclude>
+    <ClInclude Include="DistanceCondition.h">
+      <Filter>Header Files\Agent\State\Condition</Filter>
+    </ClInclude>
+    <ClInclude Include="poly2tri\common\shapes.h">
+      <Filter>PolyTri\common</Filter>
+    </ClInclude>
+    <ClInclude Include="poly2tri\common\utils.h">
+      <Filter>PolyTri\common</Filter>
+    </ClInclude>
+    <ClInclude Include="poly2tri\sweep\advancing_front.h">
+      <Filter>PolyTri\sweep</Filter>
+    </ClInclude>
+    <ClInclude Include="poly2tri\sweep\cdt.h">
+      <Filter>PolyTri\sweep</Filter>
+    </ClInclude>
+    <ClInclude Include="poly2tri\sweep\sweep.h">
+      <Filter>PolyTri\sweep</Filter>
+    </ClInclude>
+    <ClInclude Include="poly2tri\sweep\sweep_context.h">
+      <Filter>PolyTri\sweep</Filter>
+    </ClInclude>
+    <ClInclude Include="poly2tri\poly2tri.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NavMeshNode.h">
+      <Filter>Header Files\Nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="NavMesh.h">
+      <Filter>Header Files\Nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="INavigatable.h">
+      <Filter>Header Files\Nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="CovenantAgent.h">
+      <Filter>Header Files\Agent</Filter>
+    </ClInclude>
+    <ClInclude Include="Spartan.h">
+      <Filter>Header Files\Agent</Filter>
+    </ClInclude>
+    <ClInclude Include="GroupTransition.h">
+      <Filter>BehaviourTree\Transition\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="HuntTransition.h">
+      <Filter>BehaviourTree\Transition\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="PassiveTransition.h">
+      <Filter>BehaviourTree\Transition\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="SearchTransition.h">
+      <Filter>BehaviourTree\Transition\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Transition.h">
+      <Filter>BehaviourTree\Transition\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="GroupCondition.h">
+      <Filter>BehaviourTree\Condition\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="SquadAmountCondition.h">
+      <Filter>BehaviourTree\Condition\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="SpartanDistanceCondition.h">
+      <Filter>BehaviourTree\Condition\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="HuntCondition.h">
+      <Filter>BehaviourTree\Condition\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="BehaviourTree.h">
+      <Filter>BehaviourTree\Tree\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="GroupTree.h">
+      <Filter>BehaviourTree\Tree\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="HuntTree.h">
+      <Filter>BehaviourTree\Tree\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="PassiveTree.h">
+      <Filter>BehaviourTree\Tree\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="SearchTree.h">
+      <Filter>BehaviourTree\Tree\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Selector.h">
+      <Filter>BehaviourTree\Tree\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Sequence.h">
+      <Filter>BehaviourTree\Tree\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Decorator.h">
+      <Filter>BehaviourTree\Decorator\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="NotDecorator.h">
+      <Filter>BehaviourTree\Decorator\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Composite.h">
+      <Filter>BehaviourTree\Decorator</Filter>
+    </ClInclude>
+    <ClInclude Include="SteeringAgent.h">
+      <Filter>Header Files\Agent</Filter>
+    </ClInclude>
+    <ClInclude Include="SeeSpartanCondition.h">
+      <Filter>BehaviourTree\Condition\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="Behaviour.h">
+      <Filter>Header Files\Behaviour\AgentBehaviour</Filter>
+    </ClInclude>
+    <ClInclude Include="FleeBehaviour.h">
+      <Filter>Header Files\Behaviour\AgentBehaviour</Filter>
+    </ClInclude>
+    <ClInclude Include="FollowBehavoiur.h">
+      <Filter>Header Files\Behaviour\AgentBehaviour</Filter>
+    </ClInclude>
+    <ClInclude Include="FollowSpartanBehaviour.h">
+      <Filter>Header Files\Behaviour\AgentBehaviour</Filter>
+    </ClInclude>
+    <ClInclude Include="GotoPointBehaviour.h">
+      <Filter>Header Files\Behaviour\AgentBehaviour</Filter>
+    </ClInclude>
+    <ClInclude Include="WanderBehaviour.h">
+      <Filter>Header Files\Behaviour\AgentBehaviour</Filter>
+    </ClInclude>
+    <ClInclude Include="SteeringBehaviour.h">
+      <Filter>Header Files\Behaviour\SteeringBehaviour</Filter>
+    </ClInclude>
+    <ClInclude Include="AvoidingBehaviour.h">
+      <Filter>Header Files\Behaviour\SteeringBehaviour</Filter>
+    </ClInclude>
+    <ClInclude Include="Line.h">
+      <Filter>Header Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="FSM\FSMDistanceCondition.h">
+      <Filter>FSM\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="FSM\FiniteStateMachine.h">
+      <Filter>FSM\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="FSM\SelectAgent.h">
+      <Filter>FSM\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="FSM\State.h">
+      <Filter>FSM\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="FSM\FSMSurroundingCondition.h">
+      <Filter>FSM\Header</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CopyFileToFolders Include="Assets\SpriteSheetSample.png">
+      <Filter>Resource Files\Assets</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="Assets\Benlin.png">
+      <Filter>Resource Files\Assets</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="Assets\Rock.png">
+      <Filter>Resource Files\Assets</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="Assets\GruntC.png">
+      <Filter>Resource Files\Assets</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="Assets\Elite.png">
+      <Filter>Resource Files\Assets</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="Assets\EliteC.png">
+      <Filter>Resource Files\Assets</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="Assets\Grunt.png">
+      <Filter>Resource Files\Assets</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="Assets\Player.png">
+      <Filter>Resource Files\Assets</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="Assets\GuiltySpark.png">
+      <Filter>Resource Files\Assets</Filter>
+    </CopyFileToFolders>
+  </ItemGroup>
+</Project>

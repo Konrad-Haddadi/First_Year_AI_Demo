@@ -1,0 +1,182 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Game States">
+      <UniqueIdentifier>{bd14ce01-9049-4080-9cb0-15808e75d6c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game States">
+      <UniqueIdentifier>{59b3d847-58ab-4403-8564-759de20aaca9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Types">
+      <UniqueIdentifier>{4bb6397e-99ef-4290-a7a5-966d0b1ab9ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Types">
+      <UniqueIdentifier>{bcb307ed-d490-4af5-9601-5820f5694775}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Assets">
+      <UniqueIdentifier>{89a9e141-b1dd-43af-8d89-bb926b875e7c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Nodes">
+      <UniqueIdentifier>{3772e400-8b00-4199-8e0a-270461c0f983}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Nodes">
+      <UniqueIdentifier>{65ba9587-9b0d-4e8f-9976-c8b7e7b9cb39}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Core">
+      <UniqueIdentifier>{cf47f85e-beba-48e1-a9a7-b3fdd53dab8f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Core">
+      <UniqueIdentifier>{25e22116-c91e-419b-b564-7622a3070b35}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Agent">
+      <UniqueIdentifier>{191fd0f9-aba1-40a0-9e8d-1ef26349b30b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Agent">
+      <UniqueIdentifier>{52231c81-922a-4373-8c04-d68f5c4bbc76}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Agent\Behaviour">
+      <UniqueIdentifier>{e6eaa9a5-8752-44dd-9834-d4525d2b1dac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Agent\Behaviour">
+      <UniqueIdentifier>{99e54591-c19c-4f2f-bd61-b1c883fd447b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Agent\State">
+      <UniqueIdentifier>{1f2056df-6b4f-4986-a735-2348275c4673}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Agent\State">
+      <UniqueIdentifier>{34b660c0-f75d-4c9e-8859-910e7e6d5fb7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Agent\State\Condition">
+      <UniqueIdentifier>{3ef1f209-dbfd-47f4-ae53-3464d49cd09d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Agent\State\Condition">
+      <UniqueIdentifier>{a325b6b8-6915-4190-893d-8c6abbd47221}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="PlayState.cpp">
+      <Filter>Source Files\Game States</Filter>
+    </ClCompile>
+    <ClCompile Include="GameState.cpp">
+      <Filter>Source Files\Game States</Filter>
+    </ClCompile>
+    <ClCompile Include="Node.cpp">
+      <Filter>Source Files\Nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Map.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Agent.cpp">
+      <Filter>Source Files\Agent</Filter>
+    </ClCompile>
+    <ClCompile Include="PathAgent.cpp">
+      <Filter>Source Files\Agent</Filter>
+    </ClCompile>
+    <ClCompile Include="NodeMap.cpp">
+      <Filter>Source Files\Nodes</Filter>
+    </ClCompile>
+    <ClCompile Include="GotoPointBehaviour.cpp">
+      <Filter>Source Files\Agent\Behaviour</Filter>
+    </ClCompile>
+    <ClCompile Include="WanderBehaviour.cpp">
+      <Filter>Source Files\Agent\Behaviour</Filter>
+    </ClCompile>
+    <ClCompile Include="FollowBehavoiur.cpp">
+      <Filter>Source Files\Agent\Behaviour</Filter>
+    </ClCompile>
+    <ClCompile Include="State.cpp">
+      <Filter>Source Files\Agent\State</Filter>
+    </ClCompile>
+    <ClCompile Include="FiniteStateMachine.cpp">
+      <Filter>Source Files\Agent\Behaviour</Filter>
+    </ClCompile>
+    <ClCompile Include="SelectBehaviour.cpp">
+      <Filter>Source Files\Agent\Behaviour</Filter>
+    </ClCompile>
+    <ClCompile Include="DistanceCondition.cpp">
+      <Filter>Source Files\Agent\State</Filter>
+    </ClCompile>
+    <ClCompile Include="SelectAgent.cpp">
+      <Filter>Source Files\Agent</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="PlayState.h">
+      <Filter>Header Files\Game States</Filter>
+    </ClInclude>
+    <ClInclude Include="GameState.h">
+      <Filter>Header Files\Game States</Filter>
+    </ClInclude>
+    <ClInclude Include="Node.h">
+      <Filter>Header Files\Nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="LinkedList.h">
+      <Filter>Header Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Map.h">
+      <Filter>Header Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Agent.h">
+      <Filter>Header Files\Agent</Filter>
+    </ClInclude>
+    <ClInclude Include="PathAgent.h">
+      <Filter>Header Files\Agent</Filter>
+    </ClInclude>
+    <ClInclude Include="NodeMap.h">
+      <Filter>Header Files\Nodes</Filter>
+    </ClInclude>
+    <ClInclude Include="WanderBehaviour.h">
+      <Filter>Header Files\Agent\Behaviour</Filter>
+    </ClInclude>
+    <ClInclude Include="Behaviour.h">
+      <Filter>Header Files\Agent\Behaviour</Filter>
+    </ClInclude>
+    <ClInclude Include="GotoPointBehaviour.h">
+      <Filter>Header Files\Agent\Behaviour</Filter>
+    </ClInclude>
+    <ClInclude Include="FollowBehavoiur.h">
+      <Filter>Header Files\Agent\Behaviour</Filter>
+    </ClInclude>
+    <ClInclude Include="State.h">
+      <Filter>Header Files\Agent\State</Filter>
+    </ClInclude>
+    <ClInclude Include="SelectBehaviour.h">
+      <Filter>Header Files\Agent\Behaviour</Filter>
+    </ClInclude>
+    <ClInclude Include="Condition.h">
+      <Filter>Header Files\Agent\State\Condition</Filter>
+    </ClInclude>
+    <ClInclude Include="DistanceCondition.h">
+      <Filter>Header Files\Agent\State\Condition</Filter>
+    </ClInclude>
+    <ClInclude Include="FiniteStateMachine.h">
+      <Filter>Header Files\Agent\Behaviour</Filter>
+    </ClInclude>
+    <ClInclude Include="SelectAgent.h">
+      <Filter>Header Files\Agent</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CopyFileToFolders Include="Assets\SpriteSheetSample.png">
+      <Filter>Resource Files\Assets</Filter>
+    </CopyFileToFolders>
+    <CopyFileToFolders Include="Assets\Benlin.png">
+      <Filter>Resource Files</Filter>
+    </CopyFileToFolders>
+  </ItemGroup>
+</Project>
