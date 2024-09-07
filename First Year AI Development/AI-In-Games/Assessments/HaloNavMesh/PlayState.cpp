@@ -134,7 +134,7 @@ void PlayState::Unload()
 
 void PlayState::Controls()
 {
-	if (IsKeyDown(KEY_ONE))
+	if (IsKeyPressed(KEY_ONE))
 	{
 		vec2 pos = navigation->GetRandomPoint();
 

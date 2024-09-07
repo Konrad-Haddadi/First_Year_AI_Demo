@@ -1,4 +1,5 @@
 #include "PathAgent.h"
+#include "Agent.h"
 #include <raylib/raylib.h>
 #include <raylib/raymath.h>
 #include <glm/glm.hpp>
@@ -141,8 +142,17 @@ vector<Node*> PathAgent::AStarSearch(Node* _start, Node* _end)
 
 void PathAgent::Draw()
 {	
-	DrawCircleV({ pos.x + 60, pos.y + 60 }, 10, BLACK);
-	DrawCircleV({ pos.x + 60, pos.y + 60 }, 8, color);
+	int offset = 60;
+
+	DrawCircleV({ pos.x + offset, pos.y + offset }, 10, BLACK);
+	DrawCircleV({ pos.x + offset, pos.y + offset }, 8, color);
+
+	vec2 targetPos = target->GetPos();
+
+	float x = pos.x + offset;
+	float y = pos.y + offset;	
+
+	DrawLine(x, y, targetPos.x + offset, targetPos.y + offset, BLACK);
 
 	if (path.empty())
 		return;

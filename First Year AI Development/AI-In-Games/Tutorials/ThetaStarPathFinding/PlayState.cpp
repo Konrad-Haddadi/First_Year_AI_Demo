@@ -29,7 +29,7 @@ PlayState::PlayState(GameStateManager* _gsMan, GameObjectManager* _goMan)
 
 void PlayState::Load()
 {
-	map = new NodeMap({ 60, 60 });
+	map = new NodeMap({ 20, 20 });
 	map->Load();
 
 	agent = new Agent(map, new GotoPointBehaviour, BLUE, 300);	
@@ -52,7 +52,7 @@ void PlayState::Load()
 
 void PlayState::Update(float _dt)
 {
-	if (IsKeyDown(KEY_ENTER))
+	if (IsKeyPressed(KEY_ENTER))
 	{
 		SelectAgent* newAgent = new SelectAgent(map, PURPLE, 100);
 		sAgent.push_back(newAgent);

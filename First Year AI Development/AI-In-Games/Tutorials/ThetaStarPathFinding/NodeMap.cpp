@@ -14,12 +14,10 @@ void NodeMap::Load()
 		{
 			Node* node = new Node(x, y, 10, 14.14f);
 
-			/*int val = GetRandomValue(0, 100);
+			int val = GetRandomValue(0, 100);
 			if (val % 5 == 0)
-				node->SetType(NodeType::Wall);
-			else if (val % 8 == 0)
-				node->SetType(NodeType::Swamp);
-			else */
+				node->SetType(NodeType::Wall);			
+			else
 				node->SetType(NodeType::Empty);
 
 			m_nodeMap[x + (int)m_mapSize.x * y] = node;	
